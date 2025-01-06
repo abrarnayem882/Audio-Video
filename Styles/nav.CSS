@@ -3,7 +3,7 @@ nav > ul{
 }
 nav li{
     list-style: none;
-    margin-right: 10px;
+    margin-right: 20px;
     padding: 5px;
 }
 nav li:hover{
@@ -13,4 +13,14 @@ nav li a{
     text-decoration: none;
     colour:black;
 
+}
+/* nested menu style */
+nav li .dropdown{
+    display: none;
+    position: absolute;
+    background-color: lightyellow;
+    padding-left: 10px;
+}
+nav li:hover > .dropdown{
+    display: block;
 }
